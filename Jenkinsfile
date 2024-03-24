@@ -1,3 +1,5 @@
+def app
+
 pipeline {
     agent any
 
@@ -10,7 +12,7 @@ pipeline {
         stage('Build image') {
             steps {
                 script {
-                    def app = docker.build("david-paun/kiii-lab4")
+                    app = docker.build("david-paun/kiii-lab4")
                 }
             }
         }
