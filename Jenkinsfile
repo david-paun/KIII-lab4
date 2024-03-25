@@ -14,7 +14,7 @@ pipeline {
       steps {
         script {
           def app
-          app = docker.build("david-paun/kiii-lab4")
+          app = docker.build("paunovskidavid/kiii-lab4")
         }
 
       }
